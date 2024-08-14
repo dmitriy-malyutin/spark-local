@@ -1,5 +1,5 @@
 FROM jupyter/pyspark-notebook:latest
-LABEL maintainer="Dmitriy Malyutin d.malutin@oksk.ru"
+LABEL maintainer="Dmitriy Malyutin d.malyutin@s7.ru"
 
 # Установка необходимых JAR-файлов для работы с S3
 USER root
