@@ -2,15 +2,11 @@
 ```
 https://www.docker.com/products/docker-desktop/
 ```
-Не обязательно десктопную версию, хватит и консольной, но десктопная удобнее.
-
 # Установка
-## 0. Скопируйте в отдельную папку содержимое репозитория, чтобы не выгружать ваши конфиги
-
 ## 1. Дополнить файлы в папке config:
 1.1 Заполнить connetions своими ключами:
 ```
-endpoint=storage.yandexcloud.net
+endpoint=<YOUR_ENDPOINT>
 access_key=<YOUR_ACCESS_KEY>
 secret_key=<YOUR_SECRET_KEY>
 ```
