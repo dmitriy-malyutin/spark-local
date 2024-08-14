@@ -28,7 +28,9 @@ ENV PATH=$PATH:$SPARK_HOME/bin
 RUN mkdir -p /home/jovyan/spark/conf
 
 # Скрипт для настройки spark-defaults.conf
+RUN apt-get update && apt-get install -y dos2unix
 COPY setup-spark-defaults.sh /home/jovyan/setup-spark-defaults.sh
+RUN dos2unix /home/jovyan/setup-spark-defaults.sh
 RUN chmod +x /home/jovyan/setup-spark-defaults.sh
 
 # Открытие порта для Jupyter
